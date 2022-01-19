@@ -2,18 +2,15 @@
 using namespace std;
 
 bool primeSum(int check){
-    if (check <= 1){
+    if (check <= 1)
       return false;
-    }
+    
 
-for (int i = 2; i <= check / 2; i++) {
-    if (check % i == 0) {
+for (int i = 2; i <= check / 2; i++) 
+    if (check % i == 0) 
       return false;
-    }
-}
-
 return true;
-}
+    }
 
 int main() {
 
